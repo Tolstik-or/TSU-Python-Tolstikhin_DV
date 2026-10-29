@@ -26,10 +26,12 @@ else:
 list = [i for i in range(2, N+1)]
 
 for p in list:
-    print(p)
+    # print(p)
     for j in list:
         if j == p:
-            print('бугагага')
+            placeholder = p
+            #print('бугагага')
+            
         elif j % p == 0:
             list.remove(j)
 
