@@ -20,24 +20,22 @@ elif (charac_checker(userinput) == False):
          print('Это не число')
 else:
      N = int(userinput)
-
      
+     list = [i for i in range(2, N+1)]
 
-list = [i for i in range(2, N+1)]
-
-for p in list:
-    # print(p)
-    for j in list:
-        if j == p:
-            placeholder = p
+     for p in list:
+        # print(p)
+        for j in list:
+            if j == p:
+                placeholder = p
             #print('бугагага')
             
-        elif j % p == 0:
-            list.remove(j)
+            elif j % p == 0:
+                list.remove(j)
 
 # print(list)
-for lmk in list:
-    print(lmk)
+     for lmk in list:
+        print(lmk)
 
 
 # Зачеркнуть в списке числа от 2p до n, считая шагами по p (это будут числа, кратные p: 2p, 3p, 4p, ...).
